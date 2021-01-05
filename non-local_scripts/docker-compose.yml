@@ -12,13 +12,13 @@
 version: '3.5'
 services:
   scheduler:
-    build:
-      context: ../
-      dockerfile: Dockerfile
-      args:
-      - http_proxy
-      - https_proxy
-      - no_proxy
+#    build:
+#      context: ../
+#      dockerfile: Dockerfile
+#      args:
+#      - http_proxy
+#      - https_proxy
+#      - no_proxy
     image: reliableembeddedsystems/fossology:2021-01-04-fossology
     restart: unless-stopped
     environment:
@@ -37,13 +37,13 @@ services:
       timeout: 5s
       retries: 2
   web:
-    build:
-      context: ../
-      dockerfile: Dockerfile
-      args:
-      - http_proxy
-      - https_proxy
-      - no_proxy
+#    build:
+#      context: ../
+#      dockerfile: Dockerfile
+#      args:
+#      - http_proxy
+#      - https_proxy
+#      - no_proxy
     image: reliableembeddedsystems/fossology:2021-01-04-fossology
     restart: unless-stopped
     environment:
